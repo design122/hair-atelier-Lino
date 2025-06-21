@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hair atelier Lino</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hair atelier Lino</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <h1 class="logo">hair atelier Lino</h1>
+  
+        <!-- ハンバーガー -->
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+  
+        <!-- ナビメニュー -->
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="concept.html">CONCEPT</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="stylist.html">STYLIST</a></li>
+            <li><a href="access.html">ACCESS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('nav');
+    
+      hamburger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    </script>    
+    
+  <section class="main-visual">
+    <div class="mv-text">
+      <h2>hair atelier Lino</h2>
+      <h5>あなたの魅力を引き出す</h5>
+      <p>一人ひとりに似合うスタイルをご提案します。</p>
+    </div>
+    <div class="mv-image">
+    <img src="oladimeji-odunsi-n5aE6hOY6do-unsplash.jpg" alt="メインビジュアル">
+  </div>
+  </section>
+
+  <section class="Reservation">
+    <div class="image-center">
+    <img src="22268138.gif" alt="花の写真" >
+  </div>
+
+    <div class="Reservation-text">
+      <h3>Reservation</h3>
+      <p>ご予約はこちらから</p>
+    </div>
+    <div class="btn-area">
+      <a href="https://example.com/reserve" class="btn reserve"> <i class="fa-solid fa-calendar"></i>WEB</a>
+      <a href="tel:078-123-4567" class="btn tel"><i class="fa-solid fa-phone"></i> TEL</a>
+    </div>
+    
+  </section>
+
+  <section class="concept">
+    <div class="concept-inner">
+      <div class="concept-image">
+        <img src="tile-merchant-ireland-g2u8gq5XcwE-unsplash.jpg" alt="コンセプト写真">
+      </div>
+      <div class="concept-text">
+        <h2>CONCEPT</h2>
+        <p>
+          あなたらしさを引き出すスタイルをご提案。<br>
+          自然体でいられる空間と技術を大切にしています。
+        </p>
+        <a href="concept.html" class="view-more-btn">view more &gt;</a>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="links-grid">
+    <a href="menu.html" class="link-item">
+      <img src="alona-gross--1ZOkqWiI98-unsplash.jpg" alt="MENU"><h2>MENU</h2>
+    <h5>メニュー</h5>
+    <p>髪質や骨格を見極めて、<br>あなたにあったスタイルを提案。</p>
+</a>
+   <a href="stylist.html"class="link-item">
+   <img src="jessie-dee-dabrowski-www-jessiedee-net-W6cwaL7PMSw-unsplash.jpg" alt="STAFF">
+      <h2>STAFF</h2>
+      <h5>スタッフ紹介</h5>
+    <p>"お客様想い”のスタッフが<br>あなたのキレイをお手伝い。</p>
+  </a>
+    <a href="access.html"   class="link-item">
+   <img src="lindsay-cash-QZ8aqXvP8LQ-unsplash.jpg" alt="STYLE"><h2>ACCESS</h2><h5>店舗情報</h5><p>癒しの景色が自慢のサロンです。</p>
+  </a></div>
+  </section>
+
+  <footer>
+    <p>&copy; hair atelier Lino. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
