@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>アクセス | hair atelier Lino</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="logo">hair atelier Lino</h1>
+
+      <!-- ハンバーガー -->
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- ナビメニュー -->
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="concept.html">CONCEPT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="stylist.html">STYLIST</a></li>
+          <li><a href="access.html">ACCESS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+  
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>    
+  <main>
+    <section class="access">
+      <div class="access-title1">
+      <h2>ACCESS</h2>
+      <p>アクセス</p>
+      <div class="access-p">
+      <p>癒やしの景色が自慢のサロンです。
+        駅近の好立地で駐車場も完備。<br>電車でも、お車でもお気軽にお越しください。</p>
+      </div>
+    </div>
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="access-title">
+      <p>hair atelier Lino<br>
+        〒650-0022 兵庫県神戸市中央区○○町1-2-3<br>
+        JR元町駅より徒歩5分</p>
+        <br>
+      
+      <ul>
+        <li>[OPEN]</li>
+        <li>平日：10:00〜19:00</li>
+        <li>土日祝：9:00〜18:00</li>
+        <li>[CLOSE]毎週火曜日・第3水曜日</li>
+      </ul>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 hair atelier Lino</p>
+  </footer>
+</body>
+</html>
