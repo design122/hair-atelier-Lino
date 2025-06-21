@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hair atelier Lino</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="logo">hair atelier Lino</h1>
+
+      <!-- ハンバーガー -->
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- ナビメニュー -->
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="concept.html">CONCEPT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="stylist.html">STYLIST</a></li>
+          <li><a href="access.html">ACCESS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+  
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>    
+  <div class="page-title">
+    <h2>MENU</h2>
+    <p>メニュー</p>
+  </div>
+
+  <main>
+    <section class="menu-section">
+      <h3>CUT</h3>
+      <dl>
+        <div><dt>カット（一般）</dt><dd>¥4,500</dd></div>
+        <div><dt>カット（学生）</dt><dd>¥4,000</dd></div>
+        <div><dt>カット（小学生以下）</dt><dd>¥3,000</dd></div>
+      </dl>
+    </section>
+
+    <section class="menu-section">
+      <h3>PERM</h3>
+      <dl>
+        <div><dt>ベーシックパーマ</dt><dd>¥6,500</dd></div>
+        <div><dt>ポイントパーマ</dt><dd>¥4,000</dd></div>
+        <div><dt>デジタルパーマ</dt><dd>¥8,500</dd></div>
+      </dl>
+    </section>
+
+    <section class="menu-section">
+      <h3>COLOR</h3>
+      <dl>
+        <div><dt>リタッチ</dt><dd>¥5,500</dd></div>
+        <div><dt>フルカラー</dt><dd>¥6,500</dd></div>
+        <div><dt>ブリーチ</dt><dd>¥8,000</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Bona Hair. All rights reserved.</p>
+  </footer>
+</body>
+</html>
