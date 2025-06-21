@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hair atelier Lino</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="logo">hair atelier Lino</h1>
+
+      <!-- ハンバーガー -->
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- ナビメニュー -->
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="concept.html">CONCEPT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="stylist.html">STYLIST</a></li>
+          <li><a href="access.html">ACCESS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+  
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>    
+  <div class="page-title" id="concept-title">
+    <h2>CONCEPT</h2>
+    <p>コンセプト</p>
+  </div>
+
+  <main class="concept-main">
+    <div class="concept-content">
+      <img src="giorgio-trovato-qrz6s4yDcIM-unsplash.jpg" alt="コンセプト画像" />
+      <div class="concept-text">
+        <p>
+          お客様一人ひとりに合わせたスタイル提案と<br />
+          心地よい空間を提供します。<br /><br />
+          髪型だけでなく、気持ちまで整うような、<br />
+          落ち着いた癒しの時間を大切にしています。<br /><br />
+          すべての人に寄り添う美容室、それがhair atelier Linoです。
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Bona Hair. All rights reserved.</p>
+  </footer>
+</body>
+</html>
