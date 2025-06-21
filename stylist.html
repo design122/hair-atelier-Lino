@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>スタイリスト紹介 | hair atelier Lino</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="logo">hair atelier Lino</h1>
+
+      <!-- ハンバーガー -->
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+
+      <!-- ナビメニュー -->
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="concept.html">CONCEPT</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="stylist.html">STYLIST</a></li>
+          <li><a href="access.html">ACCESS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+  
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>    
+  <main>
+    <section class="stylist">
+      <h2>STYLIST</h2>
+      <p>スタイリスト紹介</p>
+
+      <div class="profile">
+        <img src="23129440_s.jpg" alt="スタイリストAの写真" />
+        <div class="profile-text">
+        <h3>Ayaka（アヤカ）</h3>
+        <p>10年以上のキャリアを持ち、ナチュラルでやわらかいスタイルを得意としています。お客様一人ひとりの魅力を大切に、丁寧な施術を心がけています。</p>
+      </div>
+    </div>
+    <div class="border-line"></div>
+      <div class="profile1">
+        <img src="31836267_s.jpg" alt="スタイリストBの写真" />
+        <div class="profile-text">
+        <h3>Hikaru（ヒカル）</h3>
+        <p>ショートカットやメンズカットが得意。ライフスタイルに合った再現性の高いヘアスタイルを提案します。</p>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 hair atelier Lino</p>
+  </footer>
+</body>
+</html>
